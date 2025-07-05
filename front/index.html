@@ -6,46 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inicio | Movilidad Segura</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .menu {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-      margin-top: 2rem;
-    }
-
-    .menu a {
-      text-decoration: none;
-    }
-
-    .menu button {
-      background-color: #ffffff;
-      color: #333;
-      border: 2px solid #007bff;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-
-    .menu button:hover {
-      background-color: #007bff;
-      color: white;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
 </head>
 
 <body>
   <div class="container">
-    <h1 style="margin-bottom: 0.5rem;">Movilidad Segura</h1>
-    <p style="text-align: center; font-size: 1.05rem; color: #555;">
+    <h1 style="margin-bottom: 0.5rem;">🚦 Movilidad Segura</h1>
+    <p style="text-align: center; font-size: 1.1rem; color: #555; margin-bottom: 1.8rem;">
       Plataforma de gestión para usuarios, reportes y acompañamientos.
     </p>
 
@@ -66,7 +32,10 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script>
+    // Actualizar año dinámicamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

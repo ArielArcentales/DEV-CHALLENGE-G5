@@ -1,3 +1,4 @@
+/* Estilo general */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f4f6f8;
@@ -8,66 +9,113 @@ body {
   margin: 0;
 }
 
-
+/* Contenedor central */
 .container {
   background: white;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
 }
 
-
+/* Títulos */
 h1 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #2c3e50;
 }
 
-
-input {
+/* Inputs y selects */
+input,
+select {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
+input:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
 
+/* Botones */
 button {
   width: 100%;
   padding: 0.75rem;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
-
+/* Mensaje de confirmación o error */
 #mensaje {
   text-align: center;
   margin-top: 1rem;
   font-weight: bold;
+  color: #444;
 }
 
-
+/* Enlace de volver */
 .volver {
   display: block;
   text-align: center;
   margin-top: 1.5rem;
   color: #007bff;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .volver:hover {
   text-decoration: underline;
+}
+
+/* Menú principal */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu button {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 2px solid #007bff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Footer del menú */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #888;
 }

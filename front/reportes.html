@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registrar Reporte | Movilidad Segura</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
-    <h1>Registrar Reporte</h1>
+    <h1>📝 Registrar Reporte</h1>
+    <p style="text-align: center; color: #666; margin-bottom: 1.5rem;">
+      Reporta cualquier incidente o situación de riesgo.
+    </p>
+
     <form id="reporteForm">
-      <input type="text" id="descripcion" placeholder="Descripción del incidente" required />
-      <input type="text" id="ubicacion" placeholder="Ubicación" required />
-      <input type="text" id="hora_riesgo" placeholder="Hora de riesgo (ej. 18:00 - 20:00)" required />
+      <input type="text" id="descripcion" placeholder="📝 Descripción del incidente" required />
+      <input type="text" id="ubicacion" placeholder="📍 Ubicación" required />
+      <input type="text" id="hora_riesgo" placeholder="⏰ Hora de riesgo (ej. 18:00 - 20:00)" required />
       <button type="submit">Registrar Reporte</button>
     </form>
+
     <p id="mensaje"></p>
     <a href="index.html" class="volver">← Volver al inicio</a>
   </div>
 
   <script src="js/reportes.js"></script>
 </body>
+
 </html>
