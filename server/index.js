@@ -32,3 +32,7 @@ app.listen(PORT, () => {
 //Ruta de Usuarios//
 const usuariosRoutes = require('./routes/usuarios');
 app.use('/api/usuarios', usuariosRoutes);
+
+//Ruta de Reportes//
+const reportesRoutes = require('./routes/reportes');
+app.use('/api/reportes', reportesRoutes);
