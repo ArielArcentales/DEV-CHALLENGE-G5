@@ -36,3 +36,7 @@ app.use('/api/usuarios', usuariosRoutes);
 //Ruta de Reportes//
 const reportesRoutes = require('./routes/reportes');
 app.use('/api/reportes', reportesRoutes);
+
+//Ruta de Movilidad//
+const movilidadRoutes = require('./routes/movilidad');
+app.use('/api/movilidad', movilidadRoutes);
