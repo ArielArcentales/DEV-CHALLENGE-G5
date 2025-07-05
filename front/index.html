@@ -1,24 +1,69 @@
-<!-- Interfaz principal
-Aqui vamos a utilizar Bootstrap -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Registro de Usuarios</title>
+  <title>Inicio | Movilidad Segura</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    .menu a {
+      text-decoration: none;
+    }
+
+    .menu button {
+      background-color: #ffffff;
+      color: #333;
+      border: 2px solid #007bff;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .menu button:hover {
+      background-color: #007bff;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  <h1>Registro de Usuario</h1>
-  <form id="registroForm">
-    <input type="text" id="nombre" placeholder="Nombre" required />
-    <input type="email" id="correo" placeholder="Correo institucional" required />
-    <input type="password" id="contrasena" placeholder="Contraseña" required />
-    <button type="submit">Registrar</button>
-  </form>
+  <div class="container">
+    <h1 style="margin-bottom: 0.5rem;">Movilidad Segura</h1>
+    <p style="text-align: center; font-size: 1.05rem; color: #555;">
+      Plataforma de gestión para usuarios, reportes y acompañamientos.
+    </p>
 
-  <p id="mensaje"></p>
+    <div class="menu">
+      <a href="registro.html">
+        <button>👤 Registrar Usuario</button>
+      </a>
+      <a href="reportes.html">
+        <button>📝 Ver Reportes</button>
+      </a>
+      <a href="acompañamientos.html">
+        <button>🚶‍♀️ Acompañamientos</button>
+      </a>
+    </div>
 
-  <script src="main.js"></script>
+    <div class="footer">
+      &copy; <span id="year"></span> Movilidad Segura
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
